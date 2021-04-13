@@ -223,6 +223,7 @@ a:focus {
   position: relative;
   padding: 24px 24px 0;
   display: flow-root;
+  background-color: #f7f7f7;
 }
 
 /* size modifiers */
@@ -391,19 +392,20 @@ a:focus {
     Main header of the website
 */
 
-.c-header__nav {
-  display: none;
-}
-
 @media (min-width: 992px) {
   .c-header {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
   }
 
   .c-header__nav {
     display: block;
+    text-align: center;
+    flex-grow: 1;
+    flex-basis: 0;
   }
 }
 
